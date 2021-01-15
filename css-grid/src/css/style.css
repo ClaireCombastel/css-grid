@@ -3,11 +3,15 @@ body {
   height: 100vh;
 }
 
+h1, h2, h3 {
+  font-family: Playfair Display, 'Times New Roman', Times, serif;
+}
+
 .grid-homepage {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template: 70px 500px minmax(300px, 1fr) / 600px 1fr 600px;
+  grid-template: 70px 450px minmax(300px, 1fr) / 600px 1fr 600px;
 }
 
 
@@ -20,7 +24,6 @@ body {
 }
 
 .title-menu {
-  font-family: Playfair Display, sans-serif;
   background: #f1f1f1;
   display: flex;
   justify-content: center;
@@ -33,7 +36,7 @@ body {
 }
 
 .menu:hover > .title-menu {
-  border-bottom: 0px solid #000;
+  border-bottom: 0 solid #000;
 }
 
 .title-menu::after {
@@ -59,13 +62,13 @@ body {
   border-bottom: 1px solid #000;
 }
 
-.title-menu:hover + .list-menu{
-  transition: top 0.3s ease-in-out;
-  top: 0px;
+.list-menu:hover {
+  top: 0;
 }
 
-.list-menu:hover {
-  top: 0px;
+.title-menu:hover + .list-menu {
+  transition: top 0.3s ease-in-out;
+  top: 0;
 }
 
 .list-menu li {
@@ -100,9 +103,35 @@ body {
 
 .presentation {
   grid-area: 2 / 1 / 3 / 2;
+  background: #59abb5;
+  padding: 60px;
 }
 
+.presentation h1 {
+  margin-top: 20px; 
+  font-size: 80px;
+  font-weight: 500;
+}
 
+.presentation p {
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+.presentation a {
+  padding: 15px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #333;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: block;
+  width: 180px;
+  text-align: center;
+}
 /* --------------- Slider --------------- */
 
 .slider {
