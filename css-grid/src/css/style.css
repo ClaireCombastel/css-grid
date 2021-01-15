@@ -265,9 +265,43 @@ img.active {
   margin-left: 50%;
   transform: translate(-50%, -50%);
 }
+
 /* --------------- Contact --------------- */
 
 .contact {
   grid-area: 3 / 3 / 4 / 4;
   background: #dec19e;
+  color: #000;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact h3 {
+  font-size: 60px;
+  padding-left: 50px;
+  
+}
+
+.to-contact {
+  flex-shrink: 0;
+  margin-right: 90px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.to-contact:hover {
+  transform: scale(1.2);
+}
+
+.to-contact img {
+  width: 50px;
+  height: 50px;
 }
