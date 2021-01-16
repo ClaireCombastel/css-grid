@@ -1,18 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
-    <title>Prestations</title>
-</head>
-<body>
-    <h1>Prestations</h1>
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="src/css/reset.css"/>
+        <link rel="stylesheet" href="src/css/style.css"/>
+        <link rel="stylesheet" href="src/css/prestations.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet"/>
+        <title>Notre Agence</title>
+    </head>
+
+    <body>
+
+        <div class="menu">
+            <h2 class="title-menu">Menu</h2>
+            <ul class="list-menu">
+                <li class="item-nav">
+                    <a href="#">Accueil</a>
+                </li>
+                <li class="item-nav">
+                    <a href="agence.html">Notre Agence</a>
+                </li>
+                <li class="item-nav">
+                    <a href="prestations.html">Nos prestations</a>
+                </li>
+                <li class="item-nav">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <h1 class="titre-prestations">Quelques destinations</h1>
+
+        <div class="grid-prestations">
+            <div class="grid-item">
+                <span class="description">Concert hybride.</span>
+                <img src="src/images/galerie1.jpg" alt="photo concert orchestre">
+                <span class="date">Le 23/11/2021</span>
+            </div>
+            <div class="grid-item">
+                <span class="description">Musée contemporain.</span>
+                <img src="src/images/galerie2.jpg" alt="photo tableaux salle de musée">
+                <span class="date">Toute l'année</span>
+            </div>
+            <div class="grid-item">
+                <span class="description">Au fil du Nil.</span>
+                <img src="src/images/galerie3.jpg" alt="photo bords du Nil Egypte">
+                <span class="date">De Mars à Septembre</span>
+            </div>
+            <div class="grid-item">
+                <span class="description">Museum.</span>
+                <img src="src/images/galerie4.jpg" alt="photo museum stegosaurus">
+                <span class="date">A l'année</span>
+            </div>
+            <div class="grid-item">
+                <span class="description">Paris.</span>
+                <img src="src/images/galerie5.jpg" alt="photo Paris arc">
+                <span class="date">Tous les jeudis</span>
+            </div>
+            <div class="grid-item">
+                <span class="description">Lorem, ipsum.</span>
+                <img src="src/images/galerie6.jpg" alt="photo statues chevaux">
+                <span class="date">Le 23/11/2021</span>
+            </div>
+            <div class="grid-item">
+                <span class="description">Lorem, ipsum.</span>
+                <img src="src/images/galerie7.jpg" alt="photo museum">
+                <span class="date">Le 23/11/2021</span>
+            </div>
+            <div class="grid-item">
+                <span class="description">Lorem, ipsum.</span>
+                <img src="src/images/galerie8.jpg" alt="photo monument antiquisant">
+                <span class="date">Le 23/11/2021</span>
+            </div>
+            <div class="grid-item">
+                <span class="description">Lorem, ipsum.</span>
+                <img src="src/images/galerie9.jpg" alt="photo pont Paris">
+                <span class="date">Le 23/11/2021</span>
+            </div>
+        </div>
+
+        <div class="slider-prestations">
+            <button class="btn-close-slider" type="button">X</button>
+            <img class="img-visible-slider" src="src/images/galerie1.jpg">
+            <button class="btn-left" type="button">
+                <img src="src/images/icones/chevron-gauche.svg" alt="chevron gauche">
+            </button>
+            <button class="btn-rigt" type="button">
+                <img src="src/images/icones/chevron-droit.svg" alt="chevron droit">
+            </button>
+        </div>
+
+        <footer>Tous droits réservés ©</footer>
+
+        <script src="src/js/app.js"></script>
+    </body>
+
 </html>
