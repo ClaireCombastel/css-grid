@@ -37,7 +37,7 @@ body {
 .description {
     position: absolute;
     top: -30px;
-    left: 0px;
+    left: 0;
     font-size: 23px;
 }
 
@@ -52,6 +52,7 @@ body {
     .grid-prestations {
       grid-template-columns: repeat(auto-fill, 300px);
     }
+
     .title-prestations {
       font-size: 30px;
     }
@@ -59,7 +60,6 @@ body {
     .description {
         font-size: 20px;
         display: flex;
-        /* width: 100%; */
     }
 
     .date {
@@ -89,13 +89,13 @@ body {
     border-radius: 5%;
     font-size: 30px;
     outline: none;
-    border: none;
     background: #000;
     color: #f1f1f1;
     border: 1px solid #f1f1f1;
 }
 
-.btn-left, .btn-right {
+.btn-left,
+.btn-right {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

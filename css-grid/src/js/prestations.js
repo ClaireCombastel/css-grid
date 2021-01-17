@@ -15,7 +15,7 @@ allPicsSlider.forEach(item => {
         srcCurrentSlider.src = e.target.src;
         currentPhoto = e.target;
         currentIndex = allPicsSlider.indexOf(currentPhoto);
-    })
+    });
 })
 
 rightSlider.addEventListener("click", () => {
