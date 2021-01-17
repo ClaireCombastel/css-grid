@@ -15,7 +15,7 @@ allPicsSlider.forEach(item => {
         srcCurrentSlider.src = e.target.src;
         currentPhoto = e.target;
         currentIndex = allPicsSlider.indexOf(currentPhoto);
-    });
+    })
 })
 
 rightSlider.addEventListener("click", () => {
@@ -24,7 +24,6 @@ rightSlider.addEventListener("click", () => {
         currentIndex = 0;
         srcCurrentSlider.src = allPicsSlider[currentIndex].src;
         currentPhoto = allPicsSlider[currentIndex];
-        console.log(currentIndex);
         return;
     }
 

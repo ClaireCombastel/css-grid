@@ -44,7 +44,7 @@ body {
 .date {
     position: absolute;
     top: -27px;
-    right: 0px;
+    right: 0;
     font-size: 18px;
 }
 
