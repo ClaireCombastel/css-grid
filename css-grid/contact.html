@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/contact.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
       rel="stylesheet"
@@ -13,6 +14,75 @@
     <title>Contact</title>
 </head>
 <body>
-    <h1>Contact</h1>
+    <div class="menu">
+        <h2 class="title-menu">Menu</h2>
+        <ul class="list-menu">
+            <li class="item-nav">
+                <a href="#">Accueil</a>
+            </li>
+            <li class="item-nav">
+                <a href="agence.html">Notre Agence</a>
+            </li>
+            <li class="item-nav">
+                <a href="prestations.html">Nos prestations</a>
+            </li>
+            <li class="item-nav">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <h1 class="title-contact">Contact</h1>
+    <p class="contact-subtitle">Contactez-nous par mail, téléphone ou par courrier.</p>
+
+    <div class="three-contacts">
+        <div class="box">
+            <img src="src/images/icones/placeholder.svg">
+            <span>12 rue du Cristal, 75003 Paris</span>
+        </div>
+        <div class="box">
+            <img src="src/images/icones/phone-call.svg">
+            <span>+0 2346 5867</span>
+        </div>
+        <div class="box">
+            <img src="src/images/icones/email.svg">
+            <span>contact@athena.com</span>
+        </div>
+    </div>
+
+
+    <form>
+        <h2>Parlez-nous de vos envies.</h2>
+
+        <label for="prenom" class="label-input">Votre prénom</label>
+        <input type="text" id="prenom" placeholder="Votre prénom">
+
+        <label for="nom" class="label-input">Votre nom</label>
+        <input type="text" id="nom" placeholder="Votre nom">
+
+        <label for="tel" class="label-input">Votre téléphone</label>
+        <input type="text" id="tel" placeholder="Votre téléphone">
+
+        <p class="title-check">Type de prestation : </p>
+        <div class="group-check">
+            <label for="voyage" class="labels-check">Voyage</label>
+            <input type="checkbox" id="voyage" name="voyage">
+        </div>
+        <div class="group-check">
+            <label for="visite" class="labels-check">Visite</label>
+            <input type="checkbox" id="visite" name="visite">
+        </div>
+        <div class="group-check">
+            <label for="billeterie" class="labels-check">Billeterie</label>
+            <input type="checkbox" id="billeterie" name="billeterie">
+        </div>
+
+        <label for="txt">Message</label>
+        <textarea  id="txt" placeholder="Votre message"></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+    
+    <footer>Tous droits réservés ©</footer>
 </body>
 </html>

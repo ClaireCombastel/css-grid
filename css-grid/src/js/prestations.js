@@ -24,7 +24,6 @@ rightSlider.addEventListener("click", () => {
         currentIndex = 0;
         srcCurrentSlider.src = allPicsSlider[currentIndex].src;
         currentPhoto = allPicsSlider[currentIndex];
-        console.log(currentIndex);
         return;
     }
 
