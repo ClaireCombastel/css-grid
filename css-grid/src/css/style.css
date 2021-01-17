@@ -36,7 +36,7 @@ h3 {
     border-bottom: 1px solid #000;
 }
 
-.menu:hover>.title-menu {
+.menu:hover > .title-menu {
     border-bottom: 0 solid #000;
 }
 
@@ -67,7 +67,7 @@ h3 {
     top: 0;
 }
 
-.title-menu:hover+.list-menu {
+.title-menu:hover + .list-menu {
     transition: top 0.3s ease-in-out;
     top: 0;
 }
@@ -324,15 +324,18 @@ footer {
     .grid-homepage {
         grid-template: 70px 450px minmax(300px, 1fr) / 400px 1fr 400px;
     }
+
     .contact h3 {
         font-size: 50px;
         padding-left: 50px;
     }
+
     .to-contact {
         width: 70px;
         height: 70px;
         margin-right: 55px;
     }
+
     .to-contact img {
         width: 35px;
         height: 35px;
@@ -343,6 +346,7 @@ footer {
     .title-choice {
         font-size: 35px;
     }
+
     .to-prestations {
         font-size: 18px;
         width: 250px;
@@ -355,42 +359,51 @@ footer {
         padding: 30px;
         border-bottom: 1px solid #000;
     }
+
     .presentation h1 {
         font-size: 60px;
         margin-top: 5px;
     }
+
     .grid-homepage {
         width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
     }
+
     .slider {
         height: 450px;
     }
+
     .title-choice {
         font-size: 28px;
         margin: 50px 10px 20px;
     }
+
     .to-prestations {
         font-size: 18px;
         width: 230px;
         padding: 16px;
         margin: 20px auto 50px;
     }
+
     .contact {
         display: block;
     }
+
     .contact h3 {
         padding-left: 0;
         margin-top: 10px;
         text-align: center;
     }
+
     .to-contact {
         width: 70px;
         height: 70px;
         margin: 30px auto;
     }
+
     .to-contact img {
         width: 35px;
         height: 35px;
